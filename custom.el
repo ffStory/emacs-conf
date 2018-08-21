@@ -1,4 +1,4 @@
-;;; custom.el --- etc
+;;; custom.el --- emacs_conf
 ;;; Commentary:
 ;;; Code:
 (custom-set-variables

@@ -1,4 +1,4 @@
-;;; keybindings.el --- etc
+;;; keybindings.el --- emacs_conf
 ;;; Commentary:
 ;;; Code:
 (global-set-key (kbd "C-h C-f") 'find-function)

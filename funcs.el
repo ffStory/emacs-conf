@@ -1,10 +1,10 @@
-;;; funcs.el --- etc
+;;; funcs.el --- emacs_conf
 ;;; Commentary:
 ;; 快速打开配置文件
 ;;; Code:
 (defun open-init-file()
   (interactive)
-  (find-file "~/.emacs.d/etc/packages.el"))
+  (find-file "~/.emacs.d/emacs_conf/packages.el"))
 
 ;; 缩进对齐
 (defun indent-buffer()

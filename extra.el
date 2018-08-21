@@ -1,4 +1,4 @@
-;;; extra.el --- etc
+;;; extra.el --- emacs_conf
 ;;; Commentary:
 ;; 补全括号
 ;;; Code:
