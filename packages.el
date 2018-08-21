@@ -206,8 +206,9 @@
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 
 (setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"                 ;; personal snippets
-        ;; "/path/to/some/collection/"           ;; foo-mode and bar-mode snippet collection
+      '(
+        ;; "~/.emacs.d/snippets"                 ;; personal snippets
+         "~/.emacs.d/emacs_conf/snippets"           ;; foo-mode and bar-mode snippet collection
         "~/.emacs.d/elpa/yasnippet-snippets-20180616.1005/snippets" ;; the yasmate collection
         ))
 ;;-------------  yasnippet begin -------------
