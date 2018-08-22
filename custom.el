@@ -6,6 +6,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(c-basic-offset 4)
  '(company-idle-delay 0)
  '(company-tooltip-idle-delay 0)
  '(cursor-type (quote bar))
