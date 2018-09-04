@@ -80,8 +80,8 @@
 
 ;;------------- jsdoc begin -------------
 (setq-default js-doc-mail-address "2422312148@qq.com"
-	      js-doc-author (format "Fan Wang ")
-	      js-doc-url "url of your website"
+	      js-doc-author (format "Fan Wang <%s>" "2422312148@qq.com")
+	      js-doc-url "www.baidu.com"
 	      js-doc-license "")
 
  ;; (add-hook 'js2-mode-hook
