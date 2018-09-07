@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: operator++
+# key: o++
+# --
+${1:Type} $1::operator++(int)
+{
+$1 old = *this;
+++(*this);
+return old;
+}

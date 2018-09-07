@@ -1,0 +1,109 @@
+# -*- mode: snippet -*-
+# name: String
+# key: String
+# --
+
+
+#include <string>
+#include <iostream>
+using namespace std;
+
+class String
+{
+public:
+    String(const char* _rep = "");
+    String(const String& str);
+    
+    ~String(){delete []rep;rep = NULL;}
+    
+    char& operator[](int index){return rep[index];}
+    const char& operator[](int index)const {return rep[index];}
+    
+    const String& operator=(const String& str);
+
+    friend ostream& operator<<(ostream& out,const String& str);
+    friend istream& operator>>(istream& in,String& str);
+    
+    friend bool operator==(String& str1,String& str2);
+    
+    friend String operator+(const String& str1,const String& str2);
+    
+private:
+    long length;
+    char* rep;
+};
+
+String::String(const char* _rep)
+{
+    if (!_rep) {    //构造函数，判断为空？则开辟1空间
+        rep = new char[1];
+        strcpy(rep, "");
+    }else
+    {               //否则，按_rep赋值
+        length = strlen(_rep);
+        rep = new char[length+1];
+        strcpy(rep, _rep);
+    }
+}
+
+String::String(const String&str) //构造函数
+{
+    length = str.length;
+    rep = new char[length+1];
+    strcpy(rep, str.rep);
+}
+
+const String& String::operator=(const String& str) //赋值运算符
+{
+    if (this!= &str) {  //判断自赋自
+        delete []rep;   //删除旧空间
+        length = str.length;    //赋值
+        rep = new char[length+1]; //开辟空间
+        strcpy(rep, str.rep); //
+    }
+    return *this; //返回*this
+}
+
+inline ostream& operator<<(ostream& out,const String& str)
+{
+    out<<str.rep<<endl;
+    return out;
+}
+inline istream& operator>>(istream& in,String& str)
+{
+    delete []str.rep;
+    char b[100];
+    cin>>b;
+    str.length = strlen(b);
+    str.rep = new char[str.length+1];
+    strcpy(str.rep, b);
+    return in;
+    
+}
+inline bool operator==(String& str1,String& str2)
+{
+    //    if (str1.length != str2.length) {
+    //        return false;
+    //    }
+    //
+    //    for (int i=0; i<str1.length; i++) {
+    //        if (str1.rep[i] != str2.rep[i]) {
+    //            return false;
+    //        }
+    //    }
+    //    return true;
+    if (strcmp(str1.rep, str2.rep) == 0) {
+        return true;
+    }
+    return false;
+}
+inline String operator+(const String& str1,const String& str2)
+{
+    long length = str1.length + str2.length;
+    char* rep = new char[length+1];
+    strcat(rep, str1.rep);
+    strcat(rep, str2.rep); //获得字符串rep
+    String s(rep); //构造对象
+    delete []rep;   //删除空间
+    return rep; //返回rep
+}
