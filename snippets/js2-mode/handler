@@ -7,6 +7,7 @@ var eventHandler = new cc.Component.EventHandler();
 eventHandler.target = this.node;
 eventHandler.component = "${1:component}";
 eventHandler.handler = "${2:func}";
+eventHandler.customEventData = "${3:customData}";
 button.clickEvents = [];
 button.clickEvents.push(eventHandler);
 

@@ -22,7 +22,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline js2-mode gruvbox-theme)))
+    (lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline js2-mode gruvbox-theme)))
  '(popwin:popup-window-position (quote right))
  '(popwin:popup-window-width 90)
  '(recentf-max-saved-items 10)
