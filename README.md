@@ -1,4 +1,4 @@
-把下面代码拷贝到init.el 中 
+1把下面代码拷贝到init.el 中 
 
 ;;; init.el --- Initialization file for Emacs
 ;;; Commentary:
@@ -15,3 +15,4 @@
 
 ;;; init.el ends here
 
+2ln -s 软连接snippets. 路径写绝对路径。
