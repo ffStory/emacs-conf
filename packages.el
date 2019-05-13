@@ -1,18 +1,9 @@
 ;;; init.el --- Initialization file for Emacs
 ;;; Commentary:
 ;;; Code:
-;; (when (>= emacs-major-version 24)
-;;   (require 'package)
-;;   (add-to-list
-;;    'package-archives
-;;    ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
-;;    '("melpa" . "http://melpa.milkbox.net/packages/")
-;;    t))
- (when (>= emacs-major-version 24)
-     (require 'package)
-     (package-initialize)
-     (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-                      ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+(require 'package)
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 
 ;;------------- js2-mode begin -----------
@@ -24,13 +15,10 @@
 (add-hook 'js2-mode-hook
           (lambda ()
             (setq imenu-create-index-function 'js2-imenu-make-index))) ;; js2-imenu-make-index 在funcs.el 中定义
-
-
 ;;------------- js2-mode end -----------
 
 
 ;;------------- company-mode start -------------
-
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
@@ -39,21 +27,6 @@
   (define-key company-active-map (kbd "M-p") nil)
   (define-key company-active-map (kbd "C-n") #'company-select-next)
   (define-key company-active-map (kbd "C-p") #'company-select-previous))
-
-;; (require 'ycmd) ;; 现在用tags
-;; (add-hook 'c++-mode-hook 'ycmd-mode)
-;; (set-variable 'ycmd-server-command '("python" "/Users/fingerdance/ycmd/ycmd/"))
-;; (set-variable 'ycmd-global-config "/Users/fingerdance/ycmd/examples/.ycm_extra_conf.py")
-;; (require 'company-ycmd)
-;; (company-ycmd-setup)
-
-;; tern 补全 小项目适用
-;; (add-to-list 'load-path "~/.emacs.d/lisp/tern/emacs/")
-;; (autoload 'tern-mode "tern.el" nil t)
-;; (add-hook 'js-mode-hook (lambda () (tern-mode t)))
-;; (require 'company-tern)
-;; (add-to-list 'company-backends 'company-tern)
-
 ;;------------- company-mode end -------------
 
 ;;------------- flycheck begin -------------
@@ -63,7 +36,7 @@
 
 ;;------------- find-file-in-project begin -------------
 (require 'find-file-in-project)
-(setq-default ffip-project-root "~/Desktop/work/kingdom/client/kingdom/assets/script/")
+(setq-default ffip-project-root "~/Desktop/work/hap/heroes_and_puzzles-client/hap/assets/Script")
 (setq-default ffip-diff-backends
               '(ffip-diff-backend-git-show-commit
                 "cd $(git rev-parse --show-toplevel) && git diff"
@@ -83,12 +56,6 @@
 	      js-doc-author (format "Fan Wang <%s>" "2422312148@qq.com")
 	      js-doc-url "www.baidu.com"
 	      js-doc-license "Happy Coding")
-
- ;; (add-hook 'js2-mode-hook
- ;;           #'(lambda ()
- ;;               (define-key js2-mode-map "\C-ci" 'js-doc-insert-function-doc)
-	       ;; (define-key js2-mode-map "@" 'js-doc-insert-tag)
- ;;			   ))
 ;;------------- jsdoc end -------------
 
 ;;------------- hungry-delete begin -------------
