@@ -4,7 +4,7 @@
 ;;; Code:
 (defun open-init-file()
   (interactive)
-  (find-file "~/.emacs.d/emacs_conf/packages.el"))
+  (find-file "~/.emacs.d/emacs-conf/packages.el"))
 
 ;; 缩进对齐
 (defun indent-buffer()
@@ -57,4 +57,3 @@
 
 (provide 'funcs)
 ;;; funcs.el ends here
-
