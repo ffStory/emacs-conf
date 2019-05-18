@@ -6,23 +6,25 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
  '(c-basic-offset 4)
  '(company-idle-delay 0)
  '(company-tooltip-idle-delay 0)
  '(cursor-type (quote bar))
  '(custom-enabled-themes (quote (gruvbox)))
- '(custom-safe-themes
-   (quote
-    ("cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679" "c3d4af771cbe0501d5a865656802788a9a0ff9cf10a7df704ec8b8ef69017c68" "3fa81193ab414a4d54cde427c2662337c2cab5dd4eb17ffff0d90bca97581eb6" "b050365105e429cb517d98f9a267d30c89336e36b109a1723d95bc0f7ce8c11d" "6ac7c0f959f0d7853915012e78ff70150bfbe2a69a1b703c3ac4184f9ae3ae02" "42b9d85321f5a152a6aef0cc8173e701f572175d6711361955ecfb4943fe93af" default)))
+ '(custom-safe-themes (quote (default)))
  '(delete-selection-mode t)
  '(global-auto-revert-mode t)
- '(global-linum-mode t)
+ '(global-linum-mode nil)
  '(inhibit-startup-screen t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline js2-mode gruvbox-theme)))
+    (## tide electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline js2-mode gruvbox-theme)))
  '(popwin:popup-window-position (quote right))
  '(popwin:popup-window-width 90)
  '(recentf-max-saved-items 10)

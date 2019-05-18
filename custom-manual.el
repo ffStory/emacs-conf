@@ -8,7 +8,7 @@
 
 ;; 高亮当前行
 (global-hl-line-mode 1)
-
+(load-theme 'gruvbox t)
 (setq-default default-tab-width 4)
 (setq-default indent-tabs-mode nil)
 ;; 满屏

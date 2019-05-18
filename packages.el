@@ -2,9 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 (require 'package)
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                         ("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 ;;------------- js2-mode begin -----------
 (require 'js2-mode)
@@ -30,8 +32,8 @@
 ;;------------- company-mode end -------------
 
 ;;------------- flycheck begin -------------
-(require 'flycheck)
-(global-flycheck-mode)
+; (require 'flycheck)
+; (global-flycheck-mode)
 ;;------------- flycheck end -------------
 
 ;;------------- find-file-in-project begin -------------
@@ -175,7 +177,6 @@
 (setq yas-snippet-dirs
       '(
         "~/.emacs.d/snippets"                 ;; personal snippets
-        ;; "~/.emacs.d/emacs_conf/snippets"           ;; foo-mode and bar-mode snippet collection
         "~/.emacs.d/elpa/yasnippet-snippets-20180616.1005/snippets" ;; the yasmate collection
         ))
 ;;-------------  yasnippet begin -------------
