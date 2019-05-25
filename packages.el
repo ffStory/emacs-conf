@@ -13,7 +13,6 @@
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 ;;------------- js2-mode end -----------
 
-
 ;;------------- company-mode start -------------
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
@@ -109,8 +108,6 @@
 (global-set-key (kbd "C-,") 'xref-pop-marker-stack)
 ;;-------------  counsel end -------------
 
-
-
 ;;-------------  yasnippet begin -------------
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -121,8 +118,6 @@
         ; "~/.emacs.d/elpa/yasnippet-snippets-20180616.1005/snippets" ;; the yasmate collection
         ))
 ;;-------------  yasnippet begin -------------
-
-
 
 ;;-------------  tide begin -------------
 (defun setup-tide-mode ()
@@ -146,6 +141,8 @@
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 ;;-------------  tide end-------------
 
+(require 'which-key)
+(which-key-mode)
 
 (provide 'packages)
 ;;; packages.el ends here
