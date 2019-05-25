@@ -3,14 +3,12 @@
 ;;; init.el --- Initialization file for Emacs
 ;;; Commentary:
 ;;; Code:
-(package-initialize)
-
 (add-to-list 'load-path "~/.emacs.d/emacs-conf/")
-(setq custom-file "~/.emacs.d/emacs-conf/custom.el")
+(setq custom-file "~/.emacs.d/emacs-conf/custom-auto.el")
 (load custom-file)
 (load "packages")
 (load "funcs")
-(load "extra")
+(load "custom-manual")
 (load "keybindings")
 
 ;;; init.el ends here

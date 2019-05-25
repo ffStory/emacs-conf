@@ -15,7 +15,9 @@
  '(company-tooltip-idle-delay 0)
  '(cursor-type (quote bar))
  '(custom-enabled-themes (quote (gruvbox)))
- '(custom-safe-themes (quote (default)))
+ '(custom-safe-themes
+   (quote
+    ("1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" default)))
  '(delete-selection-mode t)
  '(global-auto-revert-mode t)
  '(global-linum-mode nil)
@@ -24,7 +26,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (## tide electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline js2-mode gruvbox-theme)))
+    (smartparens avy-flycheck js2-mode ## tide electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline gruvbox-theme)))
  '(popwin:popup-window-position (quote right))
  '(popwin:popup-window-width 90)
  '(recentf-max-saved-items 10)
