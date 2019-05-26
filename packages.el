@@ -144,5 +144,11 @@
 (require 'which-key)
 (which-key-mode)
 
+(require 'indent-guide)
+(indent-guide-global-mode)
+; (setq indent-guide-delay 0)
+
+(global-aggressive-indent-mode 1)
+
 (provide 'packages)
 ;;; packages.el ends here

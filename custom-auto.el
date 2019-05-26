@@ -26,7 +26,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (spaceline which-key smartparens avy-flycheck js2-mode ## tide electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline gruvbox-theme)))
+    (gruvbox-theme aggressive-indent indent-guide persp-mode spaceline which-key smartparens avy-flycheck js2-mode ## tide electric-operator selectric-mode hippie-expand-slime recently lua-mode yasnippet-snippets yasnippet youdao-dictionary counsel-gtags ggtags counsel-etags iedit expand-region reveal-in-osx-finder popwin ivy hungry-delete company flycheck company-ycmd counsel swiper company-tern js-doc magit find-file-in-project ycmd powerline)))
  '(popwin:popup-window-position (quote right))
  '(popwin:popup-window-width 90)
  '(recentf-max-saved-items 10)

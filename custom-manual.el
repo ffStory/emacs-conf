@@ -25,6 +25,6 @@
 
 (set-exec-path-from-shell-PATH)
 
-(provide 'extra)
-             
+(provide 'custom-manual)
+
 ;;; extra.el ends here
